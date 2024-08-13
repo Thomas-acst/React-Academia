@@ -1,0 +1,128 @@
+footer{
+    background-color: var(--cinza);
+    padding: 2rem 7rem;
+}
+
+.footer{
+    width: 100%;
+    
+    display: flex;
+
+    justify-content: space-between;
+    color: var(--branco);
+
+    align-content: center;
+    
+}
+
+.pages{
+    padding-bottom: 2rem;
+}
+
+
+.pages h2{
+    font-size: 2rem;
+    font-family: sarabun;
+    font-weight: 600;
+
+    padding-bottom: 1rem;
+
+    padding-top: 0;
+}
+
+.pages h2 a{
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.pages ul {
+    list-style: none;
+    justify-content: center;
+ 
+    font-family: archivo;
+}
+
+.pages ul li{
+    padding-bottom: 0.3rem;
+}
+
+
+
+.pages ul li a {
+    margin-bottom: 0.5rem; 
+
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    color: var(--branco)
+
+}
+
+.copy{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+.info h2{
+    font-size: 2rem;
+    font-family: sarabun;
+    font-weight: 600;
+
+    padding-top: 0rem;
+}
+
+.info p{
+    font-size: 1.2rem;
+    font-family: sarabun;
+    font-weight: 300;
+}
+
+.copy{
+    display: block;
+
+    margin: 0 auto;
+}
+
+.copy p{
+    font-size: 1.2rem;
+    font-family: sarabun;
+    font-weight: 300;
+
+    color: var(--branco);
+    padding-top: 1rem;
+}
+
+@media (max-width: 720px){
+    footer{
+        padding: 1rem;
+    }
+
+    .info h2{
+        font-size: 1.5rem;
+        font-family: sarabun;
+        font-weight: 600;
+    
+        padding-top: 0rem;
+    }
+
+    .info p{
+        font-size: 1rem;
+    }
+
+    .pages h2{
+        font-size: 1.5rem;
+    }
+
+    .pages ul li a {
+        font-size: 1rem;
+    }
+
+    .copy{
+        height: 100px;
+    }
+}

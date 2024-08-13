@@ -1,0 +1,169 @@
+.planos {
+    display: flex;
+    overflow: hidden;
+
+    width: 100%;
+    height: auto;
+
+    background-color: var(--fundo);
+
+    justify-content: space-evenly;
+}
+
+.blocks {
+    width: 350px;
+    height: auto;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+
+    background-color: var(--cinza);
+    color: var(--branco);
+
+    position: relative;
+
+}
+
+.blocks h2 {
+    font-family: anton;
+    font-size: 2.6rem;
+    font-weight: 500;
+
+    padding: 1rem 1.5rem 1rem 1.5rem;
+
+
+}
+
+.blocks p {
+    padding: 0 1.5rem 1.4rem 1.5rem;
+
+
+}
+
+.blocks ul li {
+    margin: 0 1.5rem 0.7rem 2.5rem;
+    list-style: circle;
+
+    letter-spacing: .008em;
+    line-height: 1.3;
+
+}
+
+.blocks hr {
+    margin: 0 2rem 1.4rem 2rem;
+}
+
+.blocks button {
+    font-weight: 600;
+    margin: auto auto 2.0rem auto;
+    font-size: 1.2rem;
+
+    padding: 0.6rem;
+
+    background-color: rgba(240, 248, 255, 0);
+    color: var(--branco);
+    border: 2px solid var(--branco);
+    border-radius: 15px;
+
+    transition: 0.5s;
+}
+
+.blocks p,
+.blocks ul,
+.blocks button {
+    font-family: archivo;
+    letter-spacing: .008em;
+    line-height: 1.3;
+}
+
+.blocks img {
+    position: absolute;
+    width: 800px;
+    bottom: 0;
+    left: -200px;
+}
+
+
+.blocks button:hover {
+    color: var(--preto);
+    background-color: var(--branco);
+
+}
+
+
+@media (max-width:1090px) {
+    .planos {
+        display: flex;
+        flex-wrap: wrap;
+
+        width: auto;
+        height: auto;
+
+        justify-content: space-between;
+
+        padding: 2rem 3rem 2rem 3rem ;
+
+        box-sizing: border-box;
+
+        flex-direction: row;
+    }
+
+
+    
+    .blocks:nth-child(2), .blocks:nth-child(3){
+        margin-top: 40px;
+
+        width: 45%;
+    }
+    
+    
+    
+    
+    .blocks:nth-child(1){
+            width: 100%;
+            height: 500px;
+    }
+    
+    
+        .blocks img{
+            position: absolute;
+            object-fit: cover;
+            left: -10px;
+            height: 500px;
+            width: 110%;
+        }
+}
+
+
+@media (max-width: 720px){
+    .planos{
+        display: block;
+        padding: 0 2rem 1rem 2rem;
+    }
+
+    .blocks:nth-child(1){
+        display: flex;
+        justify-content: center; 
+        align-items: center;    
+        height: 400px;         
+    }
+
+
+    .blocks img{
+        position: absolute;
+
+        object-fit: cover;
+        left: -20%;
+        bottom: -40px;
+        height: 500px;
+        width: 150%;
+    }
+
+    .blocks:nth-child(2), .blocks:nth-child(3){
+        margin-top: 40px;
+
+        width: 100%;
+    }
+}

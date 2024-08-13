@@ -1,0 +1,56 @@
+.init_card{
+    display: block;
+
+    text-align: center;
+    justify-content: center;
+
+    padding: 2rem 10rem;
+    background-color: var(--fundo);
+    color: var(--preto);
+
+    box-sizing: border-box;
+
+}
+
+.init_card_title{
+    font-family: anton;
+    font-size: 3.5rem;
+    font-weight: 500;
+
+    padding-bottom: 0.2em;
+}
+
+.init_card_paragraph{
+
+    font-family: archivo;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: .008em;
+
+
+    line-height:1.2;
+    padding-top: 2.1rem;
+
+}
+
+
+.init_card_hr{
+    margin: 0 auto;
+    height: 1px;
+    background: var(--preto); 
+
+
+}
+
+
+
+@media (max-width: 720px){
+    .init_card{
+        box-sizing: border-box;
+        padding:  2rem 2rem 2rem;
+    }
+
+    .init_card_paragraph{
+        font-size: 1rem;
+    }
+}
